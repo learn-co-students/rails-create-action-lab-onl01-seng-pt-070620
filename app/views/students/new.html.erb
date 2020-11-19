@@ -1,1 +1,23 @@
-<!-- Create your form here -->
+
+ 
+<%= form_tag :action => 'create', :id => @student %>
+
+    <label>Student Form: </label><br>
+
+ 
+    <label for="first_name">Enter your first name: </label>
+    <input type="text" name="first_name" id="first_name" required>
+
+
+  
+    <label for="last_name">Enter your last_name: </label>
+    <input type="text" name="last_name" id="last_name" required>
+  
+
+  <%= submit_tag "Submit Student" %>
+  
+</form>
+
+
+<%= params.inspect %>
+
